@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #005792; /* Updated color */
+    color: #fff;
+    padding: 20px 10px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+section {
+    margin: 20px auto; /* Centered section */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 800px; /* Max width for readability */
+}
+
+ul {
+    list-style: inside square; /* Stylish list */
+}
+
+li {
+    margin-bottom: 10px; /* Spacing between items */
+}
+
+.project-logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+.project-section {
+    margin-top: 20px;
+}
+
+.header-content {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically centers the content within the container */
+    gap: 20px; /* Adds space between the logo and the heading */
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column; /* Stacks the flex items vertically */
+        text-align: center; /* Centers the content */
+    }
+
+    .project-logo {
+        margin-bottom: 10px; /* Adds space below the logo when stacked */
+    }
+}
